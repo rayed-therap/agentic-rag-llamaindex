@@ -1,0 +1,9 @@
+python-dotenv
+
+llama-index
+llama-index-llms-gemini
+llama-index-llms-ollama
+llama-index-llms-openai
+llama-index-embeddings-gemini
+llama-index-embeddings-ollama
+llama-index-embeddings-openai
