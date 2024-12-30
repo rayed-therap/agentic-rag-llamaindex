@@ -1,12 +1,12 @@
-from llama_index.llms.gemini import Gemini
-from llama_index.embeddings.gemini import GeminiEmbedding
-from llama_index.core.settings import Settings
-from llama_index.core.readers import SimpleDirectoryReader
-from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.indices import SummaryIndex, VectorStoreIndex
-from llama_index.core.tools import QueryEngineTool
+from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.query_engine import RouterQueryEngine
+from llama_index.core.readers import SimpleDirectoryReader
 from llama_index.core.selectors import LLMSingleSelector
+from llama_index.core.settings import Settings
+from llama_index.core.tools import QueryEngineTool
+from llama_index.embeddings.gemini import GeminiEmbedding
+from llama_index.llms.gemini import Gemini
 
 
 def get_router_query_engine(file_path: str, llm=None, embed_model=None):
